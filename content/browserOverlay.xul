@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://logmein/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://logmein/locale/browserOverlay.dtd">
+
+<overlay id="logmein-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://logmein/content/browserOverlay.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="logmein-string-bundle"
+      src="chrome://logmein/locale/browserOverlay.properties" />
+  </stringbundleset>
+
+  <popup id="contentAreaContextMenu">
+        <menuitem id="logmein-menu-item"
+                  insertafter="context-selectall"
+                  accesskey="H"
+                  class="logmein-iconic"
+                  label="&logmein.menu.label;"
+                  oncommand="LogMeInChrome.BrowserOverlay.openLink(event);"/>
+  </popup>
+
+</overlay>

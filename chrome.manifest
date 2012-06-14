@@ -1,0 +1,5 @@
+content   logmein                content/
+skin      logmein  classic/1.0   skin/
+locale    logmein  en-US         locale/en-US/
+
+overlay chrome://browser/content/browser.xul  chrome://logmein/content/browserOverlay.xul
