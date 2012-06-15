@@ -12,8 +12,8 @@ LogMeInChrome.BrowserOverlay = {
   openLink : function(aEvent) {
     let stringBundle = document.getElementById("logmein-string-bundle");
     let errMsg = stringBundle.getString("logmein.error.msg");
-    let url = stringBundle.getString("logmein.appServer.url");
     var userName = content.getSelection();
-    openUILinkIn(url+"/ui/setup/Setup/?un="+userName+"&pw=123456", "tab");
+    let url = stringBundle.getString("logmein.appServer.url")+"/setup/forcecomHomepage.apexp?un="+userName+"&pw=123456";
+    openUILinkIn(url, "tab");
   }
 };
